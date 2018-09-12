@@ -1,0 +1,545 @@
+/* 初始化代码 */
+body,
+div,
+span,
+p,
+a,
+ul,
+li,
+input,
+img,
+h1,
+h2,
+h3,
+h4,
+i,
+em,
+strong {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+input {
+    border: 0px none;
+    outline: 0px none;
+}
+
+img {
+    border: 0px;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+body {
+    font: 12px/100% "microsfot yahei";
+    background-color: #f6f6f6;
+    color: #333;
+    /* overflow: hidden; */
+}
+
+.w {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* top的样式代码 */
+.top {
+    width: 100%;
+    height: 770px;
+    background: url("imgs/banner.jpg") center bottom no-repeat;
+    /* （逻辑）这个banner  更重要的内容应该是下面的 */
+    position: relative;
+}
+
+.top .nav {
+    height: 60px;
+    font-size: 14px;
+    position: relative;
+    line-height: 60px;
+}
+
+.top .nav .logo {
+    position: absolute;
+    top: 19px; 
+    left: 7px;
+}
+/* 浮动与定位脱标后的层级差异 */
+
+.top .nav .logo a {
+    display: block;
+    width: 110px;
+    height: 25px;
+    background: url("imgs/logo.jpg");
+    text-indent: -9999px;
+}
+
+.top .nav .content {
+    width: 685px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: red; */
+    /* 为什么不给固定宽度会自动过行 */
+}
+
+.top .nav .content li {
+    float: left;
+    margin-right: 55px;
+}
+
+.top .nav .content li:last-child {
+    margin: 0px;
+}
+
+.top .text {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.top .text span.title {
+    height: 94px;
+    line-height: 94px;
+    font-size: 38px;
+    font-weight: 700;
+    display: block;
+}
+
+.top .text span.use {
+    font-size: 21px;
+}
+
+.top .search {
+    width: 650px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    top: 287px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.top .search a {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    float: left;
+    /* display: inline-block; */
+} 
+
+.top .search i.icon-icon- {
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+}
+
+.top .search input {
+    /* width: 600px; */
+    width: 593px;
+    height: 50px;
+    padding-left: 7px;
+    float: left;
+    font-size: 18px;
+    /* 父盒子宽度650px,input原先600px加padding7px，而给父盒子加了overflow:hidden；后没作用 */
+}
+
+
+
+
+/* self-help的css代码 */
+
+.self-help>p.title {
+    height: 226px;
+    line-height: 226px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.self-help .content li {
+    float: left;
+    width: 294px;
+    height: 360px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: #fff;
+}
+
+.self-help .content li:nth-child(4n) {
+    margin: 0px;
+}
+
+
+.self-help .content .picture {
+    width: 100px;
+    height: 55px;
+    display: block;
+    margin: 52px auto 31px;
+    background-image: url("imgs/精灵图.jpg");
+}
+
+.self-help .content p.title {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.self-help .content .introduce {
+    margin-top: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 15px;
+    color: #666;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.self-help .content li:nth-child(1) .picture {
+    background-position: 0px -8px;
+}
+
+.self-help .content li:nth-child(2) .picture {
+    background-position: 0px -148px;
+}
+
+.self-help .content li:nth-child(3) .picture {
+    background-position: 0px -76px;
+}
+
+.self-help .content li:nth-child(4) .picture {
+    background-position: 0px -288px;
+}
+
+.self-help .content li:nth-child(5) .picture {
+    background-position: 0px -428px;
+}
+
+.self-help .content li:nth-child(6) .picture {
+    background-position: 0px -498px;
+}
+
+.self-help .content li:nth-child(7) .picture {
+    background-position: 0px -218px;
+}
+
+.self-help .content li:nth-child(8) .picture {
+    background-position: 0px -360px;
+}
+
+
+
+/* 热门主题的css代码 */
+.hot-theme {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 78px;
+    border-bottom: 1px solid #ededed;
+}
+
+.hot-theme>.content>.title {
+    height: 196px;
+    line-height: 196px;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hot-theme .content .service,
+.hot-theme .content .new-world {
+    width: 100%;
+    height: 375px;
+    position: relative;
+    border-top: 1px solid #ededed;
+}
+
+.hot-theme .content .service img,
+.hot-theme .content .new-world img {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hot-theme .content .service .text,
+.hot-theme .content .new-world .text {
+    width: 330px;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 700;
+}
+
+.hot-theme .service .text .title,
+.hot-theme .new-world .text .title{
+    font-size: 26px;
+    height: 72px;
+    line-height: 38px;
+    /* 为什么(heigth:38px;)控制两行显示过行后，过行的会脱标，其实这里的height:是38px还是72px */
+    margin-bottom: 30px;
+}
+
+.hot-theme .service .text .introduce,
+.hot-theme .new-world .text .introduce {
+    font-size: 16px;
+    line-height: 30px;
+    height: 118px;
+    margin-bottom: 22px;
+}
+
+.hot-theme .service .text .btn,
+.hot-theme .new-world .text .btn {
+    font-size: 16px;
+}
+
+
+/* 授权的css代码 */
+.more {
+    width: 100%;
+    height: 168px;
+    background-color: #fff;
+    border-bottom: 1px solid #ededed;
+}
+
+.more .content {
+    height: 168px;
+}
+
+.more .content .left {
+    width: 49%;
+    height: 168px;
+    border-right: 1px solid #ededed;
+    float: left;
+    position: relative;
+}
+
+.more .content .policy,
+.more .content .accredit {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.more .content .policy {
+    right: 111px;
+}
+
+.more .content .accredit {
+    left: 112px;
+}
+
+.more .content .right {
+    width: 50%;
+    height: 168px;
+    float: right;
+    position: relative;
+}
+
+.more .content .policy .title,
+.more .content .accredit .title {
+    font-size: 22px;
+    height: 62px;
+    line-height: 62px;
+    font-weight: 700;
+}
+
+.more .content .policy .text,
+.more .content .accredit .text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 14px;
+}
+
+.more .content .policy .btn,
+.more .content .accredit .btn {
+    font-size: 14px;
+}
+
+/* bottom的css代码 */
+.bottom {
+    width: 100%;
+    height: 270px;
+    background-color: #fff;
+}
+
+.bottom .content {
+    height: 270px;
+    position: relative;
+    border-bottom: 1px solid #ededed;
+}
+
+.bottom ul {
+    float: left;
+    margin-top: 60px;
+}
+
+.bottom ul li.title {
+    font-size: 14px;
+    color: #333;
+}
+
+.bottom ul li {
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.bottom ul li a {
+    color: #747474;
+}
+
+.bottom .recommend  {
+    margin-right: 130px;
+}
+
+.bottom .service {
+    margin-right: 89px;
+}
+
+.bottom .about-us {
+    margin-right: 118px;
+}
+
+.bottom .content .btn a {
+    width: 173px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #666;
+    position: absolute;
+    right: 0px;
+    top: 55px;
+    color: #fff;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom .btn a i.icon-chaoaiwawa {
+    font-size: 28px;
+}
+
+
+.bottom .content .number {
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    top: 129px;
+}
+
+.bottom .content .all-day {
+    font-size: 15px;
+    color: #666;
+    position: absolute;
+    right: 0px;
+    top: 163px;
+}
+
+
+
+/* footer的css代码 */
+.footer {
+    height: 109px;
+    background-color: #fff;
+}
+
+.footer .content {
+    position: relative;
+}
+
+.footer .copyright {
+    position: absolute;
+    top: 30px;
+    /* 为什么 top：0px;后,字的顶部会与上面的底部边框重叠 */
+}
+
+.footer .copyright li {
+    float: left;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer .copyright li a {
+    color: #666;
+}
+
+.footer .icon {
+    position: absolute;
+    top: 27px;
+    right: 0px;
+    line-height: 20px;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.footer .icon li {
+    float: left;
+}
+
+.footer .icon li i.iconfont {
+    color: #666;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.footer .icon .about-us {
+    font-size: 14px;
+    color: #666;
+    margin-right: 20px;
+}
+
+.footer .icon li i.icon-diqiu {
+    margin-right: 0px;
+}
+
+.footer .icon .line {
+    width: 1px;
+    height: 20px;
+    background-color: #666;
+    margin-right: 15px;
+}
